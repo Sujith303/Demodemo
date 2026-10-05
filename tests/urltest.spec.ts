@@ -7,4 +7,6 @@ test("Verify page URL",async({page})=>{
   console.log("url is: " + url);
   
   await expect(page).toHaveURL("https://www.facebook.com/");
+  const title= await page.title();
+  console.log("Page title is: " + title);
 });

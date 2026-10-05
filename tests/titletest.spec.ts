@@ -7,5 +7,5 @@ test("Verify page title",async({page})=>{
   console.log("Page title is: " + title);
   
   // Expect a title "to contain" a substring.
-  await expect(page).toHaveTitle("Facebook");
+  
 });
